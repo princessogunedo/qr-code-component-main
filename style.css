@@ -66,6 +66,7 @@ img {
     text-align: center;
     /* height: 52px; */
     padding-bottom: 16px;
+    color: var(--slate-900);
 }
 
 .description{
