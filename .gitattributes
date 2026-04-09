@@ -1,0 +1,38 @@
+# 1. Handle line endings automatically for every file
+# text=auto tells Git to detect if a file is text or binary
+* text=auto
+
+# 2. Force LF for all common web/dev text files
+# This prevents the "everything changed" nightmare in VS Code
+*.js      text eol=lf
+*.jsx     text eol=lf
+*.ts      text eol=lf
+*.tsx     text eol=lf
+*.html    text eol=lf
+*.css     text eol=lf
+*.scss    text eol=lf
+*.json    text eol=lf
+*.md      text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+*.svg     text eol=lf
+*.sql     text eol=lf
+.gitignore text eol=lf
+
+# 3. Explicitly mark binary files
+# This ensures Git doesn't try to "fix" line endings in images or fonts
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.ico     binary
+*.pdf     binary
+*.woff    binary
+*.woff2   binary
+*.ttf     binary
+*.eot     binary
+
+# 4. Optional: Linguist Overrides
+# Tells GitHub's language bar to ignore certain folders (like documentation or tests)
+docs/* linguist-documentation
+tests/* linguist-vendored
