@@ -7,17 +7,52 @@
     --slate-300: hsl(212, 45%, 89%);
     --slate-500:hsl(216, 15%, 48%);
     --slate-900:hsl(218, 44%, 22%);
-}
-
-body {
+    /* font weights */
     --light-text:400;
     --bold-text:700;
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
     font-size: 15px;
     font-family: 'Outfit', sans-serif ;
+    background-color: var(--slate-300);
+}
+
+.content {
+    max-width: 320px;
+    max-height: 499px;
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 16px;
+    
+    
+}
+
+img {
+
+}
+
+.content-text{
+
+}
+
+.heading {
+
+}
+
+.description{
+
 }
 
 .attribution { 
-    font-size: 0.6875rem; text-align: center; 
+    font-size: 0.6875rem;
+    text-align: center; 
 }
 
 .attribution a { 
